@@ -4,15 +4,15 @@ def check_brackets(input_string):
 
     # 遍历输入字符串的每个字符
     for i, char in enumerate(input_string):
-        if char == "(":  # 如果当前字符是左括号
-            stack.append(i)  # 将左括号的索引压入栈中
+        if char == "(":  
+            stack.append(i) 
             output += " "  # 在输出字符串中添加空格以便对齐
-        elif char == ")":  # 如果当前字符是右括号
+        elif char == ")":  
             if not stack:  # 如果栈为空，说明没有匹配的左括号
-                output += "?"  # 在输出字符串中标记问号
+                output += "?"
             else:
                 stack.pop()  # 如果栈不为空，弹出一个匹配的左括号的索引
-                output += " "  # 在输出字符串中添加空格以便对齐
+                output += " "  
         else:
             output += " "  # 如果当前字符不是括号，则在输出字符串中添加空格以便对齐
 
