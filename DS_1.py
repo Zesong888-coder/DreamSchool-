@@ -53,10 +53,6 @@ def fetch_forex_rate(date, currency_code):
 				option.click()
 				break
 		
-
-		# Choose currency
-		#selection = driver.find_element(By.XPATH, "//tr/td/select/option[contains(text(), '"+currency_name+"')]")
-		
 		button = driver.find_element(By.XPATH, "//td/input[@class='search_btn']")
 		button.click()
 	    
